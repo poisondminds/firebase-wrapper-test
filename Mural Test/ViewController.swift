@@ -16,30 +16,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    
-    
+	var mural: MuralModel!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+                
         FIRDatabase.database().reference().child("murals").queryLimited(toFirst: 1).observe(.childAdded) { (muralSnapshot: FIRDataSnapshot) in
             
-            let mural = MuralModel(snapshot: muralSnapshot)
+            self.mural = MuralModel(snapshot: muralSnapshot)
             
             
-            self.titleLabel.text = mural.name!
-            self.descriptionTextView.text = mural.desc!
+            self.titleLabel.text = self.mural.name!
+            self.descriptionTextView.text = self.mural.desc!
             
-            let firstArtist = mural.artists[0]
+            let firstArtist = self.mural.artists[0]
             print(firstArtist)
             
             ArtistModel.From(key: firstArtist.key, completion: { (artistFull) in
                 
-                self.artistLabel.text = artistFull.lastName!
+                self.artistLabel.text = artistFull.firstName!
             })
             
-            let firstImage = mural.images[0]
+            let firstImage = self.mural.images[0]
             
             if let url = firstImage.url, let u = URL(string: url), let imageData = try? Data(contentsOf: u)
             {
@@ -56,8 +54,8 @@ class ViewController: UIViewController {
     
     @IBAction func getArtistsTapped(_ sender: Any) {
         
-        
-        
+        //ArtistModel.Insert()
+        mural.desc = "This is an even better description haah !"
     }
 }
 

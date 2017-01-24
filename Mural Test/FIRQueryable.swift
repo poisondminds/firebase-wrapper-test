@@ -9,12 +9,12 @@
 import Foundation
 import Firebase
 
-protocol Queryable
+protocol FIRQueryable
 {
     static var COLLECTION_NAME: String { get }
 }
 
-extension Queryable where Self: FIRModel
+extension FIRQueryable where Self: FIRModel
 {
     static func From(key: String, completion: @escaping (Self) -> Void)
     {
