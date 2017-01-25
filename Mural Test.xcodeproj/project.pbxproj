@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		850F7D019F7CFBFBADEA6D43 /* libPods-Mural Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A01E1134D87E4EEA8F618 /* libPods-Mural Test.a */; };
-		92032D7C1E37285500BC3FE6 /* FIRPropertyGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92032D7B1E37285500BC3FE6 /* FIRPropertyGettable.swift */; };
 		92032D7E1E3729D000BC3FE6 /* FIRPropertySettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92032D7D1E3729D000BC3FE6 /* FIRPropertySettable.swift */; };
 		92CC0F321E30940D00081A7A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC0F311E30940D00081A7A /* ImageModel.swift */; };
 		92CC0F341E30AC7100081A7A /* FIRQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC0F331E30AC7100081A7A /* FIRQueryable.swift */; };
+		92F1A40B1E3888CE00ED6115 /* FIRInsertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */; };
 		92F958B91E2CA8DD005B967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958B81E2CA8DD005B967F /* AppDelegate.swift */; };
 		92F958BB1E2CA8DD005B967F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958BA1E2CA8DD005B967F /* ViewController.swift */; };
 		92F958BE1E2CA8DD005B967F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F958BC1E2CA8DD005B967F /* Main.storyboard */; };
@@ -26,10 +26,10 @@
 /* Begin PBXFileReference section */
 		158A01E1134D87E4EEA8F618 /* libPods-Mural Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mural Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D645742275C46D293E9E168 /* Pods-Mural Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mural Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mural Test/Pods-Mural Test.debug.xcconfig"; sourceTree = "<group>"; };
-		92032D7B1E37285500BC3FE6 /* FIRPropertyGettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRPropertyGettable.swift; sourceTree = "<group>"; };
 		92032D7D1E3729D000BC3FE6 /* FIRPropertySettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRPropertySettable.swift; sourceTree = "<group>"; };
 		92CC0F311E30940D00081A7A /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		92CC0F331E30AC7100081A7A /* FIRQueryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRQueryable.swift; sourceTree = "<group>"; };
+		92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRInsertable.swift; sourceTree = "<group>"; };
 		92F958B51E2CA8DD005B967F /* Mural Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mural Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F958B81E2CA8DD005B967F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F958BA1E2CA8DD005B967F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 				92F958D01E2CB3FA005B967F /* ArtistModel.swift */,
 				92CC0F311E30940D00081A7A /* ImageModel.swift */,
 				92CC0F331E30AC7100081A7A /* FIRQueryable.swift */,
-				92032D7B1E37285500BC3FE6 /* FIRPropertyGettable.swift */,
 				92032D7D1E3729D000BC3FE6 /* FIRPropertySettable.swift */,
+				92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */,
 			);
 			path = "Mural Test";
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 			files = (
 				92F958CD1E2CADD7005B967F /* MuralModel.swift in Sources */,
 				92CC0F321E30940D00081A7A /* ImageModel.swift in Sources */,
-				92032D7C1E37285500BC3FE6 /* FIRPropertyGettable.swift in Sources */,
+				92F1A40B1E3888CE00ED6115 /* FIRInsertable.swift in Sources */,
 				92F958BB1E2CA8DD005B967F /* ViewController.swift in Sources */,
 				92032D7E1E3729D000BC3FE6 /* FIRPropertySettable.swift in Sources */,
 				92F958D11E2CB3FA005B967F /* ArtistModel.swift in Sources */,

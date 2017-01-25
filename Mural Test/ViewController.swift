@@ -45,17 +45,19 @@ class ViewController: UIViewController {
             }
             else
             {
-                ImageModel.From(key: firstImage.key, completion: { (imageFull) in
-                    self.imageView.image = UIImage(data: try! Data(contentsOf: URL(string: imageFull.url!)!))
-                })
+                print(":(")
             }
         }
     }
     
     @IBAction func getArtistsTapped(_ sender: Any) {
         
-        //ArtistModel.Insert()
-        mural.desc = "This is an even better description haah !"
+        ArtistModel.Create(firstName: "ARTTEST", lastName: "artist", bio: "This is the newest artist", country: "US") { (artist: ArtistModel) in
+            
+            print("Created artist: \(artist)")
+            
+            self.mural.addArtist(artist: artist)
+        }
     }
 }
 

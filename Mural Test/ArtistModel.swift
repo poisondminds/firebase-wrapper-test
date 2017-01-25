@@ -1,15 +1,7 @@
-//
-//  ArtistModel.swift
-//  Mural Test
-//
-//  Created by Ryan Burns on 1/15/17.
-//  Copyright © 2017 Ryan Burns. All rights reserved.
-//
-
 import Foundation
 import Firebase
 
-class ArtistModel: FIRModel, FIRQueryable, FIRPropertyGettable, FIRPropertySettable
+class ArtistModel: FIRModel, FIRQueryable, FIRPropertyWritable, FIRInsertable
 {
     static var COLLECTION_NAME = "artists"
 	
@@ -37,4 +29,16 @@ class ArtistModel: FIRModel, FIRQueryable, FIRPropertyGettable, FIRPropertySetta
 	var murals: [MuralModel] {
 		get { return self.get(MuralModel.COLLECTION_NAME) }
 	}
+    
+    class func Create(firstName: String, lastName: String, bio: String, country: String, completion: @escaping (ArtistModel) -> Void)
+    {
+        let data = [
+            FIELD_FIRSTNAME: firstName,
+            FIELD_LASTNAME: lastName,
+            FIELD_BIO: bio,
+            FIELD_COUNTRY: country
+        ]
+        
+        self.Insert(data: data, completion: completion)
+    }
 }

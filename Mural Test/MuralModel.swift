@@ -1,20 +1,15 @@
-//
-//  MuralModel.swift
-//  Mural Test
-//
-//  Created by Ryan Burns on 1/15/17.
-//  Copyright © 2017 Ryan Burns. All rights reserved.
-//
+
 
 import Foundation
 import Firebase
 
-class MuralModel: FIRModel, FIRQueryable, FIRPropertySettable, FIRPropertyGettable
+class MuralModel: FIRModel, FIRQueryable, FIRPropertyWritable
 {
     static var COLLECTION_NAME = "murals"
 	
 	static var FIELD_NAME = "name"
 	static var FIELD_DESCRIPTION = "description"
+    static var FIELD_IMAGES = "images"
 	
 	var name: String? {
 		get { return self.get(MuralModel.FIELD_NAME) }
@@ -25,25 +20,11 @@ class MuralModel: FIRModel, FIRQueryable, FIRPropertySettable, FIRPropertyGettab
 		set { self.set(value: newValue, for: MuralModel.FIELD_DESCRIPTION) }
 	}
 	
-	var images: [ImageModel] { return self.get(ImageModel.COLLECTION_NAME) }
+	var images: [ImageModel] { return self.get(MuralModel.FIELD_IMAGES) }
 	var artists: [ArtistModel] { return self.get(ArtistModel.COLLECTION_NAME) }
 	
-//	class func Create(name: String, desc: String, artists: [ArtistModel], completion: @escaping (MuralModel) -> Void)
-//	{
-//		let json = [
-//			FIELD_NAME: name,
-//			FIELD_DESCRIPTION: desc,
-//			ArtistModel.COLLECTION_NAME: [
-//				
-//			]
-//		];
-//		
-//		let ref = FIRDatabase.database().reference().child(MuralModel.COLLECTION_NAME).childByAutoId()
-//		ref.updateChildValues(json)
-//		
-//		ref.observe(.value) { (snapshot: FIRDataSnapshot) in
-//			
-//			completion(MuralModel(snapshot: snapshot))
-//		}
-//	}
+    func addArtist(artist: ArtistModel)
+    {
+        self.add(key: artist.key, forNode: ArtistModel.COLLECTION_NAME)
+    }
 }

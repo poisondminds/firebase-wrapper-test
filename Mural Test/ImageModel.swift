@@ -9,11 +9,8 @@
 import Foundation
 import Firebase
 
-class ImageModel: FIRModel, FIRQueryable, FIRPropertyGettable
+class ImageModel: FIRModel
 {
-    static var COLLECTION_NAME = "images"
-	
 	static var FIELD_URL = "url"
-    
 	var url: String? { return self.get(ImageModel.FIELD_URL) }
 }
