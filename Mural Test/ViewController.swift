@@ -20,11 +20,9 @@ class ViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        FIRDatabase.database().reference().child("murals").queryLimited(toFirst: 1).observe(.childAdded) { (muralSnapshot: FIRDataSnapshot) in
-            
-            self.mural = MuralModel(snapshot: muralSnapshot)
-            
+
+        MuralModel.TopWhere(child: MuralModel.FIELD_NAME, equals: "The first mural") { (mural: MuralModel) in
+            self.mural = mural
             
             self.titleLabel.text = self.mural.name!
             self.descriptionTextView.text = self.mural.desc!
