@@ -7,19 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>89440115469-cgpg0hkatum7qp36egsbg2qliufm0852.apps.googleusercontent.com</string>
+	<string>839924515197-d06gkmkmjscvlc46g9af0r5ketotl8db.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.89440115469-cgpg0hkatum7qp36egsbg2qliufm0852</string>
+	<string>com.googleusercontent.apps.839924515197-d06gkmkmjscvlc46g9af0r5ketotl8db</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBf7U5dO1LaqwKecj3tLdcv9eSGAYJayDk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>89440115469</string>
+	<string>839924515197</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>edu.chapman.cpsc370.Mural-Test</string>
 	<key>PROJECT_ID</key>
-	<string>oc-murals</string>
+	<string>oc-murals-9abca</string>
 	<key>STORAGE_BUCKET</key>
-	<string>oc-murals.appspot.com</string>
+	<string>oc-murals-9abca.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:89440115469:ios:9a0b43bf64649ebc</string>
+	<string>1:839924515197:ios:9a0b43bf64649ebc</string>
 	<key>DATABASE_URL</key>
-	<string>https://oc-murals.firebaseio.com</string>
+	<string>https://oc-murals-9abca.firebaseio.com</string>
 </dict>
 </plist>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		850F7D019F7CFBFBADEA6D43 /* libPods-Mural Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A01E1134D87E4EEA8F618 /* libPods-Mural Test.a */; };
 		92032D7E1E3729D000BC3FE6 /* FIRPropertyWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92032D7D1E3729D000BC3FE6 /* FIRPropertyWritable.swift */; };
+		927E791B1E3B463500432640 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 927E791A1E3B463500432640 /* GoogleService-Info.plist */; };
 		92CC0F321E30940D00081A7A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC0F311E30940D00081A7A /* ImageModel.swift */; };
 		92CC0F341E30AC7100081A7A /* FIRQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC0F331E30AC7100081A7A /* FIRQueryable.swift */; };
 		92F1A40B1E3888CE00ED6115 /* FIRInsertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */; };
@@ -17,7 +18,6 @@
 		92F958BE1E2CA8DD005B967F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F958BC1E2CA8DD005B967F /* Main.storyboard */; };
 		92F958C01E2CA8DD005B967F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F958BF1E2CA8DD005B967F /* Assets.xcassets */; };
 		92F958C31E2CA8DD005B967F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F958C11E2CA8DD005B967F /* LaunchScreen.storyboard */; };
-		92F958CB1E2CAB6D005B967F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F958CA1E2CAB6D005B967F /* GoogleService-Info.plist */; };
 		92F958CD1E2CADD7005B967F /* MuralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958CC1E2CADD7005B967F /* MuralModel.swift */; };
 		92F958CF1E2CB244005B967F /* FIRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958CE1E2CB244005B967F /* FIRModel.swift */; };
 		92F958D11E2CB3FA005B967F /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958D01E2CB3FA005B967F /* ArtistModel.swift */; };
@@ -27,6 +27,7 @@
 		158A01E1134D87E4EEA8F618 /* libPods-Mural Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mural Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D645742275C46D293E9E168 /* Pods-Mural Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mural Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mural Test/Pods-Mural Test.debug.xcconfig"; sourceTree = "<group>"; };
 		92032D7D1E3729D000BC3FE6 /* FIRPropertyWritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRPropertyWritable.swift; sourceTree = "<group>"; };
+		927E791A1E3B463500432640 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92CC0F311E30940D00081A7A /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		92CC0F331E30AC7100081A7A /* FIRQueryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRQueryable.swift; sourceTree = "<group>"; };
 		92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRInsertable.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		92F958BF1E2CA8DD005B967F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F958C21E2CA8DD005B967F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92F958C41E2CA8DD005B967F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92F958CA1E2CAB6D005B967F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92F958CC1E2CADD7005B967F /* MuralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuralModel.swift; sourceTree = "<group>"; };
 		92F958CE1E2CB244005B967F /* FIRModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRModel.swift; sourceTree = "<group>"; };
 		92F958D01E2CB3FA005B967F /* ArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
@@ -94,13 +94,13 @@
 		92F958B71E2CA8DD005B967F /* Mural Test */ = {
 			isa = PBXGroup;
 			children = (
+				927E791A1E3B463500432640 /* GoogleService-Info.plist */,
 				92F958B81E2CA8DD005B967F /* AppDelegate.swift */,
 				92F958BA1E2CA8DD005B967F /* ViewController.swift */,
 				92F958BC1E2CA8DD005B967F /* Main.storyboard */,
 				92F958BF1E2CA8DD005B967F /* Assets.xcassets */,
 				92F958C11E2CA8DD005B967F /* LaunchScreen.storyboard */,
 				92F958C41E2CA8DD005B967F /* Info.plist */,
-				92F958CA1E2CAB6D005B967F /* GoogleService-Info.plist */,
 				92F958CC1E2CADD7005B967F /* MuralModel.swift */,
 				92F958CE1E2CB244005B967F /* FIRModel.swift */,
 				92F958D01E2CB3FA005B967F /* ArtistModel.swift */,
@@ -176,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F958C31E2CA8DD005B967F /* LaunchScreen.storyboard in Resources */,
-				92F958CB1E2CAB6D005B967F /* GoogleService-Info.plist in Resources */,
+				927E791B1E3B463500432640 /* GoogleService-Info.plist in Resources */,
 				92F958C01E2CA8DD005B967F /* Assets.xcassets in Resources */,
 				92F958BE1E2CA8DD005B967F /* Main.storyboard in Resources */,
 			);
