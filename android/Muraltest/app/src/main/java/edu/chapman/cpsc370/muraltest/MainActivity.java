@@ -1,22 +1,16 @@
 package edu.chapman.cpsc370.muraltest;
 
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-import java.util.HashMap;
 import java.util.List;
 
+import edu.chapman.cpsc370.muraltest.models.ArtistModel;
 import edu.chapman.cpsc370.muraltest.models.ImageModel;
 import edu.chapman.cpsc370.muraltest.models.MuralModel;
 
@@ -39,20 +33,19 @@ public class MainActivity extends AppCompatActivity
         this.titleTextView = (TextView) findViewById(R.id.tv_title);
         this.descTextView = (TextView) findViewById(R.id.tv_desc);
 
-        FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference ref = db.getReference("murals");
-        ref.addValueEventListener(new ValueEventListener()
+        MuralModel.All(new MuralValueEventListener()
         {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot)
+            void onDataChange(List<MuralModel> models)
             {
-                DataSnapshot firstChildMural = dataSnapshot.getChildren().iterator().next();
+                MuralModel mural = models.get(0);
 
-                MuralModel mural = firstChildMural.getValue(MuralModel.class);
                 titleTextView.setText(mural.getName());
                 descTextView.setText(mural.getDescription());
 
-                //List<String> artistKeys = mural.getArtistKeys();
+                List<String> artistKeys = mural.getArtists();
+
+                displayArtist(artistKeys.get(0));
 
                 ImageModel firstImage = mural.getImages().get(0);
 
@@ -63,6 +56,26 @@ public class MainActivity extends AppCompatActivity
             public void onCancelled(DatabaseError databaseError)
             {
                 Log.e("test", "error: " + databaseError.getMessage());
+            }
+        });
+
+    }
+
+    private void displayArtist(String key)
+    {
+        ArtistModel.FromKey(key, new ArtistValueEventListener()
+        {
+            @Override
+            public void onDataChange(List<ArtistModel> artists)
+            {
+                ArtistModel artist = artists.get(0);
+                artistTextView.setText(artist.getFirstName());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError)
+            {
+                Log.e("test", "artist error: " + databaseError.getMessage());
             }
         });
     }
