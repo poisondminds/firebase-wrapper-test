@@ -24,28 +24,36 @@ class ViewController: UIViewController {
         MuralModel.TopWhere(child: MuralModel.FIELD_NAME, equals: "The first mural") { (mural: MuralModel) in
             self.mural = mural
             
-            self.titleLabel.text = self.mural.name!
-            self.descriptionTextView.text = self.mural.desc!
+            self.showMural()
+        }
+    }
+    
+    fileprivate func showMural()
+    {
+        self.titleLabel.text = self.mural.name!
+        self.descriptionTextView.text = self.mural.desc!
+        
+        let firstArtist = self.mural.artists[0]
+        
+        ArtistModel.From(key: firstArtist.key, completion: { (artistFull) in
+            self.artistLabel.text = artistFull.firstName!
+        })
+        
+        let firstImage = self.mural.images[0]
+        
+        let ref = FIRStorage.storage().reference(withPath: firstImage.location!)
+        ref.data(withMaxSize: 1 * 1024 * 1024, completion: { (d: Data?, e: Error?) in
             
-            let firstArtist = self.mural.artists[0]
-            print(firstArtist)
-            
-            ArtistModel.From(key: firstArtist.key, completion: { (artistFull) in
-                
-                self.artistLabel.text = artistFull.firstName!
-            })
-            
-            let firstImage = self.mural.images[0]
-            
-            if let url = firstImage.url, let u = URL(string: url), let imageData = try? Data(contentsOf: u)
+            if let error = e
             {
-                self.imageView.image = UIImage(data: imageData)
+                print("Uh uh \(error)")
             }
             else
             {
-                print(":(")
+                self.imageView.image = UIImage(data: d!)
             }
-        }
+            
+        })
     }
     
     @IBAction func getArtistsTapped(_ sender: Any) {

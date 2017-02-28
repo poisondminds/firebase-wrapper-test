@@ -5,8 +5,8 @@ class ArtistModel: FIRModel, FIRQueryable, FIRPropertyWritable, FIRInsertable
 {
     static var COLLECTION_NAME = "artists"
 	
-	static var FIELD_FIRSTNAME = "first_name"
-	static var FIELD_LASTNAME = "last_name"
+	static var FIELD_FIRSTNAME = "firstName"
+	static var FIELD_LASTNAME = "lastName"
 	static var FIELD_BIO = "bio"
 	static var FIELD_COUNTRY = "country"
 

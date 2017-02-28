@@ -11,6 +11,6 @@ import Firebase
 
 class ImageModel: FIRModel
 {
-	static var FIELD_URL = "url"
-	var url: String? { return self.get(ImageModel.FIELD_URL) }
+	static var FIELD_LOCATION = "location"
+	var location: String? { return self.get(ImageModel.FIELD_LOCATION) }
 }
