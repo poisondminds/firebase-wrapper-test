@@ -1,18 +1,28 @@
 package edu.chapman.cpsc370.muraltest.models;
 
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.List;
 
 import edu.chapman.cpsc370.muraltest.FIRListHelper;
+import edu.chapman.cpsc370.muraltest.FIRModel;
 import edu.chapman.cpsc370.muraltest.FIRQueryHelper;
 import edu.chapman.cpsc370.muraltest.ModelValueEventListener;
 import edu.chapman.cpsc370.muraltest.MuralValueEventListener;
 
-public class MuralModel
+public class MuralModel extends FIRModel
 {
     private static final String COLLECTION_NAME = "murals";
+
+    public static MuralModel FromSnapshot(DataSnapshot snapshot)
+    {
+        MuralModel mural = snapshot.getValue(MuralModel.class);
+        mural.setKey(snapshot.getKey());
+
+        return mural;
+    }
 
     public static void All(MuralValueEventListener valueEventListener)
     {
@@ -24,7 +34,6 @@ public class MuralModel
         FIRQueryHelper.FromKey(COLLECTION_NAME, key, valueEventListener);
     }
 
-    private String key;
     private String name;
     private String description;
     private HashMap<String, Boolean> tags;

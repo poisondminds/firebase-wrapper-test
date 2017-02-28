@@ -1,12 +1,12 @@
 package edu.chapman.cpsc370.muraltest.models;
 
 
-import com.google.firebase.database.ValueEventListener;
 
 import edu.chapman.cpsc370.muraltest.ArtistValueEventListener;
+import edu.chapman.cpsc370.muraltest.FIRModel;
 import edu.chapman.cpsc370.muraltest.FIRQueryHelper;
 
-public class ArtistModel
+public class ArtistModel extends FIRModel
 {
     private static final String COLLECTION_NAME = "artists";
 
@@ -19,6 +19,16 @@ public class ArtistModel
     private String country;
     private String firstName;
     private String lastName;
+
+    public ArtistModel(String bio, String country, String first, String last)
+    {
+        this.bio = bio;
+        this.country = country;
+        this.firstName = first;
+        this.lastName = last;
+    }
+
+    public ArtistModel() { }
 
     public String getFirstName()
     {
@@ -39,4 +49,5 @@ public class ArtistModel
     {
         return country;
     }
+
 }

@@ -7,7 +7,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class ModelValueEventListener<T> implements ValueEventListener
+public abstract class ModelValueEventListener<T extends FIRModel> implements ValueEventListener
 {
     private Class<T> type;
 
@@ -25,7 +25,10 @@ public abstract class ModelValueEventListener<T> implements ValueEventListener
 
         for (DataSnapshot snapshot : dataSnapshot.getChildren())
         {
-            models.add(snapshot.getValue(this.type));
+            T model = snapshot.getValue(this.type);
+            model.setKey(snapshot.getKey());
+
+            models.add(model);
         }
 
         onDataChange(models);
