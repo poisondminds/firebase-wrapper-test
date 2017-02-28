@@ -1,11 +1,16 @@
 package edu.chapman.cpsc370.muraltest;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -49,7 +54,15 @@ public class MainActivity extends AppCompatActivity
 
                 ImageModel firstImage = mural.getImages().get(0);
 
-                Picasso.with(MainActivity.this).load(firstImage.getUrl()).into(imageView);
+                StorageReference ref = FirebaseStorage.getInstance().getReference(firstImage.getLocation());
+                ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
+                {
+                    @Override
+                    public void onSuccess(Uri uri)
+                    {
+                        Picasso.with(MainActivity.this).load(uri).into(imageView);
+                    }
+                });
             }
 
             @Override

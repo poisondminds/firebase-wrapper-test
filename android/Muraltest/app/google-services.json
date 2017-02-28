@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "839924515197",
-    "firebase_url": "https://oc-murals-9abca.firebaseio.com",
-    "project_id": "oc-murals-9abca",
-    "storage_bucket": "oc-murals-9abca.appspot.com"
+    "project_number": "590711563192",
+    "firebase_url": "https://mural-finder.firebaseio.com",
+    "project_id": "mural-finder",
+    "storage_bucket": "mural-finder.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:839924515197:android:9c05950cbe23a60c",
+        "mobilesdk_app_id": "1:590711563192:android:b41f541c2e3c8734",
         "android_client_info": {
           "package_name": "edu.chapman.cpsc370.muraltest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "839924515197-1nhrqa9kmjd4nj5pj3c8oaqqnmnamgni.apps.googleusercontent.com",
+          "client_id": "590711563192-688sl0bd31llvh9hf1appno2a06vea5o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDoMu5Wov_b2TCR3NLcwAmjh4q0dDuUV2A"
+          "current_key": "AIzaSyBCJ7fR75veYXQZLZgJaiBSNAqjbrwxJDY"
         }
       ],
       "services": {

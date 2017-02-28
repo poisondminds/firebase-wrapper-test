@@ -6,13 +6,13 @@ package edu.chapman.cpsc370.muraltest.models;
 
 public class ImageModel
 {
-    private String url;
+    private String location;
 
     @SuppressWarnings("unused")
     public ImageModel() { }
 
-    public String getUrl()
+    public String getLocation()
     {
-        return url;
+        return this.location;
     }
 }
