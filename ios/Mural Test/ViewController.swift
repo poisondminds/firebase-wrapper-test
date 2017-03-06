@@ -34,10 +34,10 @@ class ViewController: UIViewController {
         self.descriptionTextView.text = self.mural.desc!
         
         let firstArtist = self.mural.artists[0]
-        
-        ArtistModel.From(key: firstArtist.key, completion: { (artistFull) in
-            self.artistLabel.text = artistFull.firstName!
-        })
+        firstArtist.getExternal {
+            self.artistLabel.text = firstArtist.firstName!
+        }
+
         
         let firstImage = self.mural.images[0]
         
