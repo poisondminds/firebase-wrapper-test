@@ -8,29 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		850F7D019F7CFBFBADEA6D43 /* libPods-Mural Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A01E1134D87E4EEA8F618 /* libPods-Mural Test.a */; };
-		92032D7E1E3729D000BC3FE6 /* FIRPropertyWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92032D7D1E3729D000BC3FE6 /* FIRPropertyWritable.swift */; };
 		92117F791E651A590024F74B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92117F781E651A590024F74B /* GoogleService-Info.plist */; };
+		92B0D0FC1E6CFBBE00D6C8D6 /* FIRInsertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D0F71E6CFBBE00D6C8D6 /* FIRInsertable.swift */; };
+		92B0D0FD1E6CFBBE00D6C8D6 /* FIRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D0F81E6CFBBE00D6C8D6 /* FIRModel.swift */; };
+		92B0D0FE1E6CFBBE00D6C8D6 /* FIRPropertyWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D0F91E6CFBBE00D6C8D6 /* FIRPropertyWritable.swift */; };
+		92B0D0FF1E6CFBBE00D6C8D6 /* FIRQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D0FA1E6CFBBE00D6C8D6 /* FIRQueryable.swift */; };
+		92B0D1001E6CFBBE00D6C8D6 /* FIRStorageDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D0FB1E6CFBBE00D6C8D6 /* FIRStorageDownloadable.swift */; };
 		92CC0F321E30940D00081A7A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC0F311E30940D00081A7A /* ImageModel.swift */; };
-		92CC0F341E30AC7100081A7A /* FIRQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC0F331E30AC7100081A7A /* FIRQueryable.swift */; };
-		92F1A40B1E3888CE00ED6115 /* FIRInsertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */; };
 		92F958B91E2CA8DD005B967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958B81E2CA8DD005B967F /* AppDelegate.swift */; };
 		92F958BB1E2CA8DD005B967F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958BA1E2CA8DD005B967F /* ViewController.swift */; };
 		92F958BE1E2CA8DD005B967F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F958BC1E2CA8DD005B967F /* Main.storyboard */; };
 		92F958C01E2CA8DD005B967F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F958BF1E2CA8DD005B967F /* Assets.xcassets */; };
 		92F958C31E2CA8DD005B967F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F958C11E2CA8DD005B967F /* LaunchScreen.storyboard */; };
 		92F958CD1E2CADD7005B967F /* MuralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958CC1E2CADD7005B967F /* MuralModel.swift */; };
-		92F958CF1E2CB244005B967F /* FIRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958CE1E2CB244005B967F /* FIRModel.swift */; };
 		92F958D11E2CB3FA005B967F /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F958D01E2CB3FA005B967F /* ArtistModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		158A01E1134D87E4EEA8F618 /* libPods-Mural Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mural Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D645742275C46D293E9E168 /* Pods-Mural Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mural Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mural Test/Pods-Mural Test.debug.xcconfig"; sourceTree = "<group>"; };
-		92032D7D1E3729D000BC3FE6 /* FIRPropertyWritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRPropertyWritable.swift; sourceTree = "<group>"; };
 		92117F781E651A590024F74B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92B0D0F71E6CFBBE00D6C8D6 /* FIRInsertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRInsertable.swift; path = "firebase-db-wrapper-swift/FIRInsertable.swift"; sourceTree = "<group>"; };
+		92B0D0F81E6CFBBE00D6C8D6 /* FIRModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRModel.swift; path = "firebase-db-wrapper-swift/FIRModel.swift"; sourceTree = "<group>"; };
+		92B0D0F91E6CFBBE00D6C8D6 /* FIRPropertyWritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRPropertyWritable.swift; path = "firebase-db-wrapper-swift/FIRPropertyWritable.swift"; sourceTree = "<group>"; };
+		92B0D0FA1E6CFBBE00D6C8D6 /* FIRQueryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRQueryable.swift; path = "firebase-db-wrapper-swift/FIRQueryable.swift"; sourceTree = "<group>"; };
+		92B0D0FB1E6CFBBE00D6C8D6 /* FIRStorageDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRStorageDownloadable.swift; path = "firebase-db-wrapper-swift/FIRStorageDownloadable.swift"; sourceTree = "<group>"; };
 		92CC0F311E30940D00081A7A /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
-		92CC0F331E30AC7100081A7A /* FIRQueryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRQueryable.swift; sourceTree = "<group>"; };
-		92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRInsertable.swift; sourceTree = "<group>"; };
 		92F958B51E2CA8DD005B967F /* Mural Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mural Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F958B81E2CA8DD005B967F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F958BA1E2CA8DD005B967F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +42,6 @@
 		92F958C21E2CA8DD005B967F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92F958C41E2CA8DD005B967F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92F958CC1E2CADD7005B967F /* MuralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuralModel.swift; sourceTree = "<group>"; };
-		92F958CE1E2CB244005B967F /* FIRModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRModel.swift; sourceTree = "<group>"; };
 		92F958D01E2CB3FA005B967F /* ArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
 		96C74579D9A7E1A28DABA8BB /* Pods-Mural Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mural Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mural Test/Pods-Mural Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		92B0D0F61E6CFBA200D6C8D6 /* firebase-db-wrapper-swift */ = {
+			isa = PBXGroup;
+			children = (
+				92B0D0F71E6CFBBE00D6C8D6 /* FIRInsertable.swift */,
+				92B0D0F81E6CFBBE00D6C8D6 /* FIRModel.swift */,
+				92B0D0F91E6CFBBE00D6C8D6 /* FIRPropertyWritable.swift */,
+				92B0D0FA1E6CFBBE00D6C8D6 /* FIRQueryable.swift */,
+				92B0D0FB1E6CFBBE00D6C8D6 /* FIRStorageDownloadable.swift */,
+			);
+			name = "firebase-db-wrapper-swift";
+			sourceTree = "<group>";
+		};
 		92F958AC1E2CA8DC005B967F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,7 @@
 		92F958B71E2CA8DD005B967F /* Mural Test */ = {
 			isa = PBXGroup;
 			children = (
+				92B0D0F61E6CFBA200D6C8D6 /* firebase-db-wrapper-swift */,
 				92117F781E651A590024F74B /* GoogleService-Info.plist */,
 				92F958B81E2CA8DD005B967F /* AppDelegate.swift */,
 				92F958BA1E2CA8DD005B967F /* ViewController.swift */,
@@ -102,12 +117,8 @@
 				92F958C11E2CA8DD005B967F /* LaunchScreen.storyboard */,
 				92F958C41E2CA8DD005B967F /* Info.plist */,
 				92F958CC1E2CADD7005B967F /* MuralModel.swift */,
-				92F958CE1E2CB244005B967F /* FIRModel.swift */,
 				92F958D01E2CB3FA005B967F /* ArtistModel.swift */,
 				92CC0F311E30940D00081A7A /* ImageModel.swift */,
-				92CC0F331E30AC7100081A7A /* FIRQueryable.swift */,
-				92032D7D1E3729D000BC3FE6 /* FIRPropertyWritable.swift */,
-				92F1A40A1E3888CE00ED6115 /* FIRInsertable.swift */,
 			);
 			path = "Mural Test";
 			sourceTree = "<group>";
@@ -237,15 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B0D0FF1E6CFBBE00D6C8D6 /* FIRQueryable.swift in Sources */,
+				92B0D1001E6CFBBE00D6C8D6 /* FIRStorageDownloadable.swift in Sources */,
 				92F958CD1E2CADD7005B967F /* MuralModel.swift in Sources */,
+				92B0D0FD1E6CFBBE00D6C8D6 /* FIRModel.swift in Sources */,
 				92CC0F321E30940D00081A7A /* ImageModel.swift in Sources */,
-				92F1A40B1E3888CE00ED6115 /* FIRInsertable.swift in Sources */,
+				92B0D0FC1E6CFBBE00D6C8D6 /* FIRInsertable.swift in Sources */,
+				92B0D0FE1E6CFBBE00D6C8D6 /* FIRPropertyWritable.swift in Sources */,
 				92F958BB1E2CA8DD005B967F /* ViewController.swift in Sources */,
-				92032D7E1E3729D000BC3FE6 /* FIRPropertyWritable.swift in Sources */,
 				92F958D11E2CB3FA005B967F /* ArtistModel.swift in Sources */,
 				92F958B91E2CA8DD005B967F /* AppDelegate.swift in Sources */,
-				92F958CF1E2CB244005B967F /* FIRModel.swift in Sources */,
-				92CC0F341E30AC7100081A7A /* FIRQueryable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

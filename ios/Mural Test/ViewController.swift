@@ -21,10 +21,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        MuralModel.TopWhere(child: MuralModel.FIELD_NAME, equals: "The first mural") { (mural: MuralModel) in
-            self.mural = mural
+        MuralModel.TopWhere(child: MuralModel.FIELD_NAME, equals: "The first mural") { (m: MuralModel?) in
             
-            self.showMural()
+            if let mural = m
+            {
+                self.mural = mural
+                self.showMural()
+            }
+        }
+        
+        MuralModel.Where(child: MuralModel.FIELD_NAME, equals: "Some value", limit: 1000) { (murals: [MuralModel]) in
+            
+            // Do something
         }
     }
     
